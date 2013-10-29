@@ -7,10 +7,10 @@ layout: nil
 	<link href="http://rodrigo.ma/atom.xml" rel="self"/>
 	<link href="http://rodrigo.ma/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://marcelotozzi.com/</id>
+	<id>http://rodrigo.ma/</id>
 	<author>
-		<name>Marcelo Tozzi</name>
-		<email>marcelotozzidelima@gmail.com</email>
+		<name>Rodrigo Monteiro</name>
+		<email>rodrigoma@gmail.com</email>
 	</author>
 
 	{% for post in site.posts limit:20 offset:0 %}
