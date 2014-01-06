@@ -3,11 +3,11 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Marcelo Tozzi</title>
+	<title>Rodrigo Monteiro</title>
 	<link href="http://rodrigo.ma/atom.xml" rel="self"/>
 	<link href="http://rodrigo.ma/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://rodrigo.ma/</id>
+	<id>http://rodrigoma.com/</id>
 	<author>
 		<name>Rodrigo Monteiro</name>
 		<email>rodrigoma@gmail.com</email>
@@ -16,7 +16,7 @@ layout: nil
 	{% for post in site.posts limit:20 offset:0 %}
 	<entry>
 		<title>{{ post.title }}</title>
-		<link href="http://rodrigo.ma{{ post.url }}"/>
+		<link href="http://rodrigoma.com{{ post.url }}"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<id>http://rodrigoma.com{{ post.id }}</id>
 		<content type="html">{{ post.content | xml_escape }}</content>
