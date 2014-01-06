@@ -4,8 +4,8 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Rodrigo Monteiro</title>
-	<link href="http://rodrigo.ma/atom.xml" rel="self"/>
-	<link href="http://rodrigo.ma/"/>
+	<link href="http://rodrigoma.com/atom.xml" rel="self"/>
+	<link href="http://rodrigoma.com/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>http://rodrigoma.com/</id>
 	<author>
