@@ -1,18 +1,23 @@
 ---
 layout: post
-title: "Bem vindos!"
+title: "Raspberry Pi Config"
 tags:
-- title: Pessoal
-  slug: pessoal
-date:   2010-10-30 01:32:30
-categories: Pessoal
+- title: server
+  slug: server
+date:   2022-09-22 22:30:30
+categories: media server
 ---
-Nesse blog pretendo postar minhas opiniões, coisas interessantes que descobrir e tudo mais.
 
-Coisas que me interessam:
+https://blog.anoff.io/2020-12-install-docker-raspi/
 
-Java, Programação Extrema, Ruby on Rails, Scala, Groovy, .Net, SCRUM, Agilidade, Testes, NoSQL etc.Ou seja, tudo que é "uma brasa, mora".
+https://www.funkyton.com/install-plex-media-server-on-raspberry-pi/
 
-Então, vamos lá!
+https://www.funkyton.com/add-external-hard-disk-to-plex-media-library/
 
-Show me the code!
+https://www.funkyton.com/local-mass-storage-container-with-raspberry-pi-and-external-hdd/
+
+https://nitinmanju.medium.com/set-up-a-home-media-server-using-a-raspberry-pi-and-plex-666a44f9a3bb
+
+https://www.ionos.com/digitalguide/server/configuration/raspberry-pi-plex/
+
+https://raspberrytips.com/install-no-ip-raspberry-pi/
