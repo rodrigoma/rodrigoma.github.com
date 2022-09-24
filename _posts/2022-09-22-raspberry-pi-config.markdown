@@ -21,3 +21,39 @@ https://nitinmanju.medium.com/set-up-a-home-media-server-using-a-raspberry-pi-an
 https://www.ionos.com/digitalguide/server/configuration/raspberry-pi-plex/
 
 https://raspberrytips.com/install-no-ip-raspberry-pi/
+
+```
+## folder para montar as HDDs
+sudo mkdir /media/1TB
+sudo mkdir /media/4TB
+sudo mkdir /media/4TBII
+sudo chown -R pi:pi /media
+sudo chmod -R 755 /media
+
+
+## Links Simbolicos a serem criados
+ln -s /media/4TBII/CenterMediaNew CenterMediaNew
+ln -s /media/4TBII/CenterMediaNew/tmp/pyload-download pyload-download
+ln -s /media/4TBII/CenterMediaNew/tmp/torrents torrents-download
+ln -s /media/1TB/Comics Comics
+ln -s /media/1TB/Series Series
+ln -s /media/4TB/SeriesAntigas SeriesAntigas
+
+
+## fstab --> https://unix.stackexchange.com/questions/204641/automatically-mount-a-drive-using-etc-fstab-and-limiting-access-to-all-users-o
+UUID=5BFA-041D        /media/1TB      exfat   defaults,auto,rw,uid=1000,gid=1000,umask=022,nofail 0 1
+UUID=6083-157B        /media/4TB      exfat   defaults,auto,rw,uid=1000,gid=1000,umask=022,nofail 0 1
+UUID=61FC-8549        /media/4TBII    exfat   defaults,auto,rw,uid=1000,gid=1000,umask=022,nofail 0 1
+
+
+## [TRANSMISSION] config para rodar o script ao final do download
+/config/./runScript.sh
+
+
+## [PLEX] mudar user:group que executa o PLEX e o caminho do Data folder --> https://dausruddin.com/how-to-change-plex-user-running-under-in-ubuntu/
+[Service]
+Environment="PLEX_MEDIA_SERVER_APPLICATION_SUPPORT_DIR=/media/4TBII/CenterMediaNew/SupportApps"
+User=pi
+Group=pi
+## caminho original do Data folder --> $PLEX_HOME/Library/Application Support/Plex Media Server/
+```
