@@ -22,6 +22,8 @@ https://www.ionos.com/digitalguide/server/configuration/raspberry-pi-plex/
 
 https://raspberrytips.com/install-no-ip-raspberry-pi/
 
+https://sharechiwai.com/post/2021-02-11-raspberry-pi-how-to-unzip-rar-unrar/
+
 ```
 ## folder para montar as HDDs
 sudo mkdir /media/1TB
