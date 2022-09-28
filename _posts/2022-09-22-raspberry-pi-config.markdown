@@ -24,6 +24,24 @@ https://raspberrytips.com/install-no-ip-raspberry-pi/
 
 https://sharechiwai.com/post/2021-02-11-raspberry-pi-how-to-unzip-rar-unrar/
 
+https://b2midia.freshdesk.com/support/solutions/articles/1000266606-configurando-ip-fixo-no-raspberry
+
+```
+## definir IP statico
+
+sudo nano /etc/dhcpcd.conf
+
+## adicionar essas linhas no arquivo
+interface eth0
+static ip_address=192.168.0.100/24
+static routers=192.168.0.1
+static domain_name_servers=192.168.0.1 8.8.8.8
+
+#faz o reload das configuracoes
+sudo nohup sh -c 'ip addr flush dev eth0 && systemctl restart dhcpcd.service' > /dev/null &
+```
+
+
 ```
 ## folder para montar as HDDs
 sudo mkdir /media/1TB
