@@ -1,6 +1,6 @@
 name: Rodrigo Monteiro
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 timezone: America/Sao_Paulo
 show_drafts: false
 relative_permalinks: true
